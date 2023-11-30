@@ -1,5 +1,5 @@
 <script>
-    import { LeafletMap, StateMap, CumulativeDataTable, FireCountChart, DistrictBarchart } from '$components';
+    import { Header, LeafletMap, StateMap, CumulativeDataTable, FireCountChart, DistrictBarchart, Footer } from '$components';
     import { browser } from '$app/environment';
     import { IntersectionObserver, getDateISO } from '$lib/utils';
 
@@ -25,7 +25,8 @@
     }
 </script>
 
-<div class="container my-20">
+<Header />
+<div class="container my-12">
     <div class="w-full xl:w-5/6 mx-auto">
         <div class="mb-0">
             <div class="flex gap-2 xs:gap-4 items-end mb-4">
@@ -77,13 +78,4 @@
         </IntersectionObserver>
     </div>
 </div>
-<footer class="mb-8">
-    <p class="text-sm xs:text-base px-6 text-left xs:text-center text-grey">
-        Stub the Stubble is a public interest project by <a
-            class="underline underline-offset-4"
-            href="https://www.saroja.earth"
-        >
-            Saroja Earth
-        </a>
-    </p>
-</footer>
+<Footer />
