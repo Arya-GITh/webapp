@@ -52,7 +52,7 @@
             <div class="flex flex-col md:flex-row md:justify-between md:gap-4 mb-8 md:mb-0 last:mb-0 md:border-b md:last:border-none md:border-dashed md:border-lightish-grey">
                 <h4 class="md:basis-1/6 md:flex-none md:flex md:items-center mb-2 md:mb-0">
                     <span class="md:ml-4 text-lg md:text-base font-semibold break-all">
-                        {district[0]}
+                        {district[0].sort()}
                     </span>
                 </h4>
                 <div class="md:basis-2/5 md:flex-none">
